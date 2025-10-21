@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.skillcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 0;
+    padding: 70px;
+}
+
+.skillcontainer_text {
+    color: white;
+    flex: 0.6;
+    text-align: left;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.skillcontainer_text > h2 {
+    font-size: 30px;
+}
+
+.skillcontainer_image {
+    flex: 0.4;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.skillcontainer_image > img {
+    width: 600px;
+    border-radius: 3px;
+    object-fit: contain;
+}
+
+.skillcontainer_skillset > h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.skillcontainer_skillset > h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.skillcontainer_slider > .css-lrbo11-MuiLinearProgress-root {
+    background-color: #E4B1F0;
+}
+
+.slider > span > .css-hud6bj-MuiLinearProgress-bar1 {
+    background-color: blueviolet;
+}
+
+/* Mobile and tablet styles */
+@media (max-width: 768px) {
+    .skillcontainer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .skillcontainer_image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        order: 0; /* Ensure image appears first */
+    }
+
+    .skillcontainer_text {
+        order: 1; /* Ensure text appears second */
+        text-align: left; /* Align text to left */
+    }
+
+    .skillcontainer_image > img {
+        width: 100%; /* Make image responsive */
+        max-width: 300px; /* Optional max width for smaller screens */
+    }
+}

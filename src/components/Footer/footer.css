@@ -1,0 +1,23 @@
+.icons{
+   display:flex;
+   justify-content: space-between;
+   width: 250px;
+}
+.footer{
+    display:flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #D272C4;
+}
+
+@media screen and (max-width: 600px) {
+   .footer{
+       flex-direction: column;
+   }
+   
+   .icons> a > svg{
+       height: 40px;
+       width: 40px;
+   }
+   }

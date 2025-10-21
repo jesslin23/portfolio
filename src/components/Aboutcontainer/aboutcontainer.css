@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+  background-color: #401F46; /* Black background for consistency */
+  color: white;
+  margin: 200px 0;
+}
+
+.aboutContainer_image {
+  flex: 0.4;
+  margin-left: 70px;
+}
+
+.aboutContainer_image img {
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect for image */
+}
+
+.aboutContainer_text {
+  flex: 0.6;
+  max-width: 600px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutContainer_text h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid white; /* Underline effect */
+  padding-bottom: 10px;
+}
+
+.aboutContainer_text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .aboutContainer_text {
+    order: 1; /* Text first */
+    text-align: center; /* Center align text */
+  }
+
+  .aboutContainer_image {
+    order: 2; /* Image second */
+    margin: 20px 0; /* Add some margin for spacing */
+    text-align: center; /* Center align image */
+  }
+
+  .aboutContainer_image img {
+    width: 200px; /* Smaller image for mobile */
+  }
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+.topcontent {
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.topcontent_container {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+}
+
+.topcontent_container > p {
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 3px;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+.topcontent_container > a > button {
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px; /* Slightly rounder corners */
+    outline: none;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    padding: 10px 20px; /* Maintain consistent padding */
+    box-sizing: border-box; /* Ensures padding does not affect overall width */
+}
+
+.topcontent_container > h1 {
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.topcontent_b1 {
+    color: black;
+    background-color: #E4B1F0;
+    font-size: 14px;
+    padding: 10px 20px; /* Reduced padding for smaller buttons */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.topcontent_b2 {
+    color: white;
+    border: 1px solid white !important;
+    font-size: 14px;
+    padding: 10px 20px; /* Reduced padding for smaller buttons */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.topcontent_b1:hover {
+    color: #E4B1F0;
+    background-color: black;
+    font-weight: 700;
+    transform: scale(1); /* Prevent size change on hover */
+}
+
+.topcontent_b2:hover {
+    color: black;
+    background-color: white;
+    font-weight: 700;
+    transform: scale(1); /* Prevent size change on hover */
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 768px) {
+    .topcontent_container {
+        position: relative;
+        top: 250px; /* Adjust as needed for alignment */
+        right: auto; /* Centering */
+        text-align: center; /* Centering text */
+        padding: 20px; /* Padding for the container */
+        backdrop-filter: blur(5px); /* Slight blur effect for backdrop */
+        overflow: hidden; /* Prevent scrollbars */
+    }
+
+    .topcontent_container > h1 {
+        font-size: 30px; /* Smaller font size for mobile */
+    }
+
+    .topcontent_b1, .topcontent_b2 {
+        width: auto; /* Auto width for centered buttons */
+        padding: 8px 15px; /* Smaller padding for reduced button size */
+        margin: 10px auto; /* Centered buttons with auto margin */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    }
+
+    .topcontent_b1 {
+        margin-right: 0; /* Remove right margin for full-width */
+    }
+
+    .topcontent_b1:hover, .topcontent_b2:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+
+    .topcontent_b1:hover {
+        background-color: black; /* Ensure background remains on hover */
+    }
+
+    .topcontent_b2:hover {
+        background-color: white; /* Ensure background remains on hover */
+    }
+}
